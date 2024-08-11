@@ -522,14 +522,14 @@ class _PinCodeTextFieldState extends State<PinCodeTextField>
     _textEditingController!.removeListener(_textEditingControllerListener);
     if (widget.autoDisposeControllers) {
       _textEditingController!.dispose();
-      _focusNode!.dispose();
+      //_focusNode!.dispose();
       // if (!kReleaseMode) {
       //   print(
       //       "*** Disposing _textEditingController and _focusNode, To disable this feature please set autoDisposeControllers = false***");
       // }
     }
 
-    _errorAnimationSubscription?.cancel();
+    //_errorAnimationSubscription?.cancel();
 
     _cursorController.dispose();
 
